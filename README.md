@@ -20,6 +20,6 @@
 - v0.0.1
 	- Platforms do not resume with the rest of the gameLoop 
 	on winning the game and starting over
-	~Temporary solution: just refresh the browser page 
+	*Temporary solution: just refresh the browser page 
 	OR click out-of-tab , wait several seconds , and 
-	go back to the game tab.... yeah i'm workin on it....~
+	go back to the game tab.... yeah i'm workin on it....*
