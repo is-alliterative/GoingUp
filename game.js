@@ -426,7 +426,7 @@ function updateGoodItemsSpawn() {
 
 const iconWidth = 40; // Width of each icon in the score bar
 const iconHeight = 40; // Height of each icon
-const maxIcons = 1;
+const maxIcons = 16;
 //Math.floor(canvas.width / iconWidth); // Number of icons that can fit in the score bar
 
 function renderItemsCollectedBar(score) {
