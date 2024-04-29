@@ -505,7 +505,7 @@ function updateGoodItemsSpawn() {
 //itemsCollectedBar + icon properties
 const iconWidth = 40; // Width of each icon in the score bar
 const iconHeight = 40; // Height of each icon
-const maxIcons = 1; //Math.floor((canvas.width / 2)/ iconWidth);
+const maxIcons = 10; //Math.floor((canvas.width / 2)/ iconWidth);
 
 function renderItemsCollectedBar(itemsCollected) {
     let spacing = 16;
