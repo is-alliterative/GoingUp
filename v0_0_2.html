@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Higher</title>
+    <style>
+
+    body  {
+        display: flex;
+            justify-content: center;
+            align-items: center;
+            height: auto; 
+            margin: 0; 
+            
+     }
+
+.image-container{
+text-align: center;
+justify-content: center;
+width: 680px;
+height: 1120px;
+}
+
+.canvas-cursor-hidden {
+cursor: none;
+}
+
+.theMainMenu {
+display: none;
+width: 680px;
+height: 1120px;
+background-color: purple;
+
+}
+.main-menu-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Align items horizontally in the center */
+}
+
+button {
+    align-self: center;
+    position: relative;
+    padding: 20px 30px; /* Adjust padding to add spacing between buttons */
+    margin: 10px 0; /* Add margin to create space between buttons */
+    font-size: 18px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: linear-gradient(to right, #64B5F6, #FFD54F, #81C784, #FF8A65);
+    color: #fff;
+    border-radius: 0;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 50%;
+}
+
+
+    button:before {
+    content: '';
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.2));
+    animation: moveLight 2s linear infinite;
+    }
+
+        @keyframes moveLight {
+        0% {
+            transform: translate(-150%, -150%);
+        }
+        100% {
+            transform: translate(150%, 150%);
+        }
+        }
+
+    
+
+
+
+
+#gameCanvas {
+    width: 680x;
+    height: 1120px;
+    background-color: #737373; /* Background of the playable area */ 
+    
+}
+
+
+
+
+#pauseOverlay {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+/*background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+backdrop-filter: blur(10px); /* Frosted glass effect */
+color: red;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 2em;
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="image-container">
+    
+        <img id="myImage" src="cover2.png" alt="the image">
+       
+            <canvas id="gameCanvas"></canvas>
+
+    <div class="theMainMenu">
+        <div class="main-menu-container">
+            <button>Start Game</button>
+            <button>Settings</button>     
+        </div>   
+    </div>
+
+    </div>
+    
+    <script src="game.js"></script>
+</body>
+</html>
